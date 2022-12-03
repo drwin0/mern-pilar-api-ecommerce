@@ -1,0 +1,56 @@
+@use "./utils/" as *;
+.iphone-section {
+  padding-bottom: 5rem;
+  .title {
+    color: #2c2c2c;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    @include breakpoint-up("medium") {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+  }
+}
+.iphone {
+  background: url("../../assets/images/iphone-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &__container {
+    gap: 2.5rem;
+    @include breakpoint-up("large") {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__left,
+  &__right {
+    > div {
+      text-align: center;
+      h4 {
+        font-size: 25px;
+        margin-bottom: 1.5rem;
+        color: #333;
+        font-weight: 600;
+      }
+      p {
+        font-size: 15px;
+        color: #666;
+      }
+    }
+
+    @include breakpoint-up("xlarge") {
+      gap: 2rem;
+      .end {
+        align-self: end;
+      }
+    }
+  }
+  &__middle {
+    @include flex(center, center);
+  }
+}

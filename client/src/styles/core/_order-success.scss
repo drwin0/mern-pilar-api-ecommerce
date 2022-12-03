@@ -1,0 +1,30 @@
+@use "./utils/" as *;
+.orderSuccess {
+  padding: 7rem 0;
+  text-align: center;
+  height: 100vh;
+  @include flex(center, center);
+  flex-direction: column;
+
+  > svg {
+    font-size: 3rem;
+    color: var(--theme-color);
+    @include breakpoint-up("large") {
+      font-size: 4rem;
+    }
+  }
+  > h1 {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    font-weight: 600;
+    @include breakpoint-up("large") {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+  }
+  > a {
+    color: white;
+    width: 200px;
+    margin: 0 auto;
+  }
+}

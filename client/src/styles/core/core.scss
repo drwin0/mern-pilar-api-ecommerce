@@ -1,0 +1,79 @@
+// Import core styles
+@use "./reset" as *;
+@use "./utils/" as *;
+//components
+
+// header
+@use "./header";
+// cart
+@use "./cart";
+@use "./checkout";
+
+// home page
+@use "./hero-slide";
+@use "./support-area";
+@use "./discount-banner";
+
+@use "./products";
+@use "./single-product";
+
+@use "./iphone";
+@use "./brand";
+
+@use "./news-letter";
+
+@use "./app-download";
+// loading
+@use "./loading";
+
+// footer
+@use "./footer";
+
+// login
+@use "./login";
+
+// forgot
+
+@use "./forgot-password";
+
+// activation email
+@use "./activation-email";
+
+// product details
+@use "./product-detail";
+
+// shop page
+@use "./shop";
+
+// checkout
+@use "./shipping";
+@use "./confirm-order";
+@use "./payment";
+@use "./order-success";
+
+// user dashboard
+@use "./sidebar";
+@use "./profile";
+@use "./my-orders";
+@use "./order-details";
+
+// not found
+@use "./not-found";
+
+// about us
+
+@use "./about-us";
+@use "./our-history";
+@use "./our-features";
+//blog
+@use "./blog";
+
+// contact
+@use "./contact";
+
+//
+@use "./wish-list-item";
+
+// modal
+
+@use "./product-modal";
