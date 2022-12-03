@@ -3,7 +3,7 @@ const CustomErrorHandler = require("../services/CustomErrorHandler");
 
 const { ValidationError } = Joi;
 
-// error handeling middleware
+// error handling middleware
 const errorHandler = (err, req, res, next) => {
   let statusCode = 500;
 
